@@ -10,56 +10,118 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: "Georgia", serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Times New Roman", serif;
 }
 
 body{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:#f4d28a;
-background: radial-gradient(circle at center, #3a2c0d 0%, #0c0a05 60%, #000 100%);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background: radial-gradient(circle at center, #2e2100 0%, #000000 65%);
+  color: #f4e6b3;
 }
 
-/* LOGO */
+/* container */
+.hero{
+  max-width: 900px;
+  padding: 30px;
+}
+
+/* logo */
 .logo{
-width:140px;
-height:140px;
-border-radius:50%;
-border:3px solid #b9913b;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:55px;
-margin:0 auto 35px auto;
-background:black;
-box-shadow:0 0 45px rgba(255,200,100,.25);
+  width:140px;
+  height:140px;
+  border:2px solid #c9a227;
+  border-radius:50%;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:65px;
+  font-weight:bold;
+  background:black;
+  color:#c9a227;
+  box-shadow:0 0 20px rgba(255,215,0,.35);
 }
 
-/* HEADERS */
+/* headings */
 h1{
-font-size:52px;
-line-height:1.25;
-max-width:900px;
-margin:0 auto 18px;
+  font-size:52px;
+  line-height:1.2;
+  margin-top:30px;
 }
 
-h2{
-font-size:42px;
-margin-bottom:25px;
+.sub{
+  margin-top:25px;
+  font-size:20px;
 }
 
-/* PARAGRAPH */
-p{
-font-size:20px;
-max-width:820px;
-margin:12px auto;
+.highlight{
+  color:#ffdd7e;
 }
 
-/* BUTTON */
-button{
+.waitlist{
+  margin-top:40px;
+  padding:14px 34px;
+  font-size:18px;
+  border-radius:999px;
+  border:1px solid #d4af37;
+  background: linear-gradient(to right, #ffe08a, #d4af37);
+  color:black;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.waitlist:hover{
+  opacity:.9;
+  transform:scale(1.03);
+}
+
+/* responsive */
+@media(max-width:700px){
+  h1{font-size:34px;}
+  .logo{width:120px;height:120px;font-size:55px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+  <div class="logo">N</div>
+
+  <h1>
+    Modern Arab Luxury Beauty<br>
+    — Reimagined
+  </h1>
+
+  <p class="sub">
+    High-performance clean lip beauty created for Arab women.<br>
+    Powered by science, rooted in culture.
+  </p>
+
+  <p class="sub highlight">
+    NAI Beauty — launching soon
+  </p>
+
+  <p class="sub">
+    Be the first to experience NAI Beauty.<br>
+    Join the waitlist for early access & founder updates.
+  </p>
+
+  <button class="waitlist" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfymf7fa7IdvbOMZBR54215B3GTA32GPqGJvIWzfyEMfI55UQ/viewform?usp=header'">
+    Join the waitlist
+  </button>
+
+</div>
+
+</body>
+</html>
+
