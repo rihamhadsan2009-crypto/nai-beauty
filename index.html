@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,62 +18,56 @@
 }
 
 body{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-
-  /* الخلفية */
-  background: radial-gradient(circle at center, #3a2b00 0%, #000000 70%);
-
-  /* أهم نقطة */
-  color:#f8e6b5;
+    background: radial-gradient(circle at center, #2e2100 0%, #000000 65%);
+    color: #f4e6b3;
+    text-align:center;
 }
 
-/* container */
+/* MAIN CONTAINER */
 .hero{
   max-width: 900px;
-  padding: 30px;
+  padding: 40px 20px;
+  margin: 0 auto;
 }
 
-/* logo */
+/* LOGO */
 .logo{
   width:140px;
   height:140px;
-  border:2px solid #d4af37;
+  border:2px solid #c9a227;
   border-radius:50%;
-  margin:auto;
+  margin:30px auto 10px;
   display:flex;
   align-items:center;
   justify-content:center;
   font-size:65px;
   font-weight:bold;
   background:black;
-  color:#d4af37;
+  color:#c9a227;
   box-shadow:0 0 20px rgba(255,215,0,.35);
 }
 
-/* headings */
+/* HEADLINE */
 h1{
-  font-size:52px;
+  font-size:50px;
   line-height:1.2;
-  margin-top:30px;
+  margin-top:20px;
 }
 
+/* SUB TEXT */
 .sub{
-  margin-top:25px;
+  margin-top:18px;
   font-size:20px;
-  color:#ffecb3;
 }
 
 .highlight{
-  color:#ffd977;
+  color:#ffdd7e;
 }
 
+/* BUTTON */
 .waitlist{
-  margin-top:40px;
-  padding:14px 34px;
+  margin-top:35px;
+  padding:14px 36px;
   font-size:18px;
   border-radius:999px;
   border:1px solid #d4af37;
@@ -83,13 +78,36 @@ h1{
 }
 
 .waitlist:hover{
-  opacity:.9;
   transform:scale(1.03);
+  opacity:.9;
 }
 
+/* SECTION BLOCKS */
+.section{
+  max-width: 900px;
+  margin:120px auto 0;
+  padding:0 20px;
+}
+
+.section p{
+  max-width:800px;
+  margin:10px auto 0;
+  font-size:18px;
+}
+
+/* PRODUCT IMAGE */
+.product-img{
+  max-width:650px;
+  border-radius:22px;
+  display:block;
+  margin:35px auto;
+}
+
+/* RESPONSIVE MOBILE */
 @media(max-width:700px){
   h1{font-size:34px;}
   .logo{width:120px;height:120px;font-size:55px;}
+  .product-img{max-width:95%;}
 }
 
 </style>
@@ -123,9 +141,37 @@ h1{
   <button class="waitlist" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfymf7fa7IdvbOMZBR54215B3GTA32GPqGJvIWzfyEMfI55UQ/viewform?usp=header'">
     Join the waitlist
   </button>
+</div>
 
+
+<div class="section">
+  <h2>Founder note</h2>
+  <p>
+  NAI Beauty was created to celebrate Arab women and their modern identity. The brand was born from a simple belief, beauty should feel effortless, luxurious, and honest. Every product is designed to enhance your natural look, not hide it. Science guides our formulas, culture inspires our soul, and your everyday life shapes our vision.
+  </p>
+</div>
+
+
+<div class="section">
+  <h2>Why clean beauty</h2>
+  <p>
+  Clean beauty means choosing formulas that respect your skin and your health, avoiding unnecessary harsh ingredients, focusing on high-performance actives, and prioritizing transparency. Clean does not mean boring, it means smarter, safer, and luxurious in a modern way.
+  </p>
+</div>
+
+
+<div class="section">
+  <h2>About the first product</h2>
+
+  <!-- USE NEW IMAGE -->
+  <img src="nai-new.jpg" class="product-img">
+
+  <p>
+  This lip oil is designed for Arab lips, it nourishes deeply, adds shine without stickiness,
+  and gives a natural healthy color. The formula is lightweight, comfortable,
+  and created to fit everyday life from morning coffee to late evenings.
+  </p>
 </div>
 
 </body>
 </html>
-
